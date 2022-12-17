@@ -1,0 +1,77 @@
+.contenitore{
+    width: auto;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.contenitore div{
+
+    width: 70px;
+    height: 60px;
+    border: solid 1px black;
+    font-size: 1rem; /* far sparire spazi bianchi font-size:0px*/
+    display: inline-block; /* primo punto */
+}
+
+/* prima parte esercizio */
+.contenitore div:nth-child(2n){ /* secondo punto ossia tutti i div all interno di un contenitore devono avere questa caratteristica */
+
+    border-color: red;
+}
+
+.contenitore div:nth-child(2n+1) span:nth-child(2n)  {
+
+    color:green; /* terzo punto */
+}
+
+.contenitore div:nth-child(2) span:last-of-type{
+    color: blue;
+}
+
+.contenitore div:nth-child(6) span:not(:last-of-type){
+    color: rgba(128, 128, 11, 0.604);
+}
+
+
+/* fine prima parte dell esercizio */
+
+
+/* seconda parte dell esercizio */
+
+.contenitore div span:first-of-type{
+   
+    position:relative;
+    top:60px;
+    left: 25px;
+
+} 
+
+.contenitore div span:nth-child(2){
+    position: relative;
+    bottom: 25px;
+    left: 13px;
+}
+
+.contenitore div:nth-child(10) span:last-of-type{
+    position: relative;
+    top:18px;
+    left: 30px;
+}
+
+.contenitore div:nth-child(1) span:last-of-type{
+    position: relative;
+    top:18px;
+    right: 60px;
+}
+
+/* fine seconda parte dell esercizio */
+
+
+/*.contenitore div:nth-child(10){
+    color: brown;
+} era solo un esempio*/ 
+
+/* .contenitore div:nth-child(2n+1){
+    background-color: pink;
+} era un esempio mio*/ 
